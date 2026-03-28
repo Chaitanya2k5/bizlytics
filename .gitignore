@@ -1,0 +1,12 @@
+ # Environment variables - never push these
+backend/.env
+
+# Python
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/bizlytics.db
+
+# Node
+frontend/node_modules/
+frontend/dist/

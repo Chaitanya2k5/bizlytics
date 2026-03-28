@@ -8,8 +8,13 @@ export default defineConfig({
       '/api': {
         target: 'http://localhost:8000',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      },
-    },
-  },
+        rewrite: path => path.replace(/^\/api/, '')
+      }
+    }
+  }
 })
+```
+
+Then create a new file at `frontend/.env.production` and paste this:
+```
+VITE_API_URL=https://bizlytics-g87q.onrender.com
